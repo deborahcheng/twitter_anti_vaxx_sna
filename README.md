@@ -16,7 +16,7 @@ Therefore, we believe that it is an important topic to discuss right now since t
 
 ## Technicals
 
-This project is written in Python. The tweets and their user information were scraped using Twitter API v2. SNA metrics were calculated using the NetworkX library and the graphs were visualized with <a href="https://www.polinode.com/">Polinode</a>.
+This project is written in Python. The tweets and their user information were scraped using Twitter API v2. SNA metrics were calculated using the NetworkX library, the diffusion model was simulated using the ndlib library, machine learning with NLP and k-means were done using the NLTK and scikit-learn library, and the graphs were visualized with <a href="https://www.polinode.com/">Polinode</a>.
 
 While Twitter API v1.1 was widely used and had readily available libraries, Twitter API v2 offers the ability to scrape by Conversation ID, which includes replies, quotes and retweets associated with the conversation. This makes scraping for engagements of engagements much easier. The json file returned from API v2 was also easier to work with and I wasn't restricted to the information filtered by existing libraries. Therefore, I decided to scrape using API v2 by defining my own functions as there was no libraries using API v2 at the time.
 
@@ -66,7 +66,7 @@ We found that this network was very weakly connected, with many nodes on the out
   <li>Users with Top K-Core</li>
 </ul>
 
-The results differ depending on different starting points with random start performing worse.
+The results differ depending on different starting points with random start performing worse. Therefore, for the objective of pushing factual information to the community, we should focus on users with high centrality values as calculated.
 
 Please see Jupyter Notebooks and presentation pdf for analysis notes.
 
@@ -86,8 +86,18 @@ User Engagement Network - Anti-Vaxx Related Hashtags Conversations - Dec 18 - 24
 Tweets Network - Anti-Vaxx Related Hashtags Conversations (Incomplete) - Dec 18 - 24th, 2020
 <img src="https://github.com/deborahcheng/twitter_anti_vaxx_sna/blob/main/graph/Tweets_v3.png?raw=true">
 
+## Conclusion
+
+We understand that there are many conversations and concerns regarding vaccines, many of which are valid concerns and arguments such as accountability and liability of pharmaceutical companies, individual rights, freedom of choice and how it affects the next generation. However, these arguments and discussions must be fueled by factual, scientific information rather than consipracy theories and/or misinformation.
+
+With this project, we believe that understanding the social networks and how information spreads within these commnities, we can device a strategic way to limit the spread of misinformation and more effectively push and spread accurate scientifically backed factual information to the public, allowing individuals to make more sound decisions.
+
 ## Reference
 
 <a href="https://open.spotify.com/episode/2M1OghvpwPhTEzVtKEGUZL?si=Z0QTC_XLT1yQQ6To6wenfA">The Spread of Misinformation Online by Data Skeptic</a><br>
 <a href="https://www.cogitatiopress.com/mediaandcommunication/article/view/2847/2847">The Visual Vaccine Debate on Twitter: A Social Network Analysis</a><br>
 <a href="https://www.who.int/teams/risk-communication/infodemic-management">W.H.O. Infodemic Management</a>
+
+## Credits
+
+While the codes in this project were written by myself, the presentation were a collaboration of the team (members listed in the presentation pdf), with much credit to Eun Suk (Jason) Hong.
