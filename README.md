@@ -36,6 +36,8 @@ The data were scraped daily between Dec 18 - 24th, 2020 with the initial queries
 
 Subsequent queries for the replies, quotes and retweets related to the resulted conversations were then scraped along with the users who posted them.
 
+NOTE: Due to the number of files involved and the number of duplicated tweets in the scrapes, only the files directly used in the notebook 03 - Social Network Analysis.ipynb will be included in this repo.
+
 ## Challenge
 
 Twitter, along with many other social media websites, had been aggressively deleting and banning posts and accounts associated with misinformation. During the course of our project, one of the biggest challenge was what I called the <b>vanishing tweets and user syndrome</b>, where Twitter were basically deleting and banning accounts as we were collecting the data.
